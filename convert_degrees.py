@@ -1,15 +1,16 @@
-degrees_type = input('Enter C or F: ')
-degrees = int(input('Enter degrees: '))
-result = 0
+degree_type = input('Enter C or F: ').upper()
+degree = int(input('Enter degree: '))
+result_degree = 0
+result_degree_type = ""
 
-if degrees_type == "C":
-    str_degrees_type = "Celsius"
-    result = (degrees * 9/5) + 32
-elif degrees_type == "F":
-    str_degrees_type = "Fahrenheit"
-    result = (degrees - 32) * 5/9
+if degree_type == "C":
+    result_degree_type = "Fahrenheit"
+    result_degree = (degree * 9 / 5) + 32
+elif degree_type == "F":
+    result_degree_type = "Celsius"
+    result_degree = (degree - 32) * 5 / 9
 else:
     print('Please enter C or F. Try it again.')
     exit()
 
-print(('{} is {}.').format(str_degrees_type, result))
+print(('{} is {}.').format(result_degree_type, result_degree))
