@@ -2,7 +2,7 @@ math = int(input('Math: '))
 science = int(input('Science:'))
 physics =  int(input('Physics: '))
 
-average = (math + science + physics) / 3
+average = (math + science + physics) // 3
 
 
 score = ''
