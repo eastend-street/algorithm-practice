@@ -13,4 +13,5 @@ else:
     print('Please enter C or F. Try it again.')
     exit()
 
-print(('{} is {}.').format(result_degree_type, result_degree))
+print(f'{result_degree_type} is {result_degree}.')
+# print(('{} is {}.').format(result_degree_type, result_degree))
